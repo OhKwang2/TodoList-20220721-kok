@@ -1,4 +1,4 @@
-package com.springboot.todolist.web.dto.todolist;
+package com.springboot.todolist.web.dto.content;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -9,11 +9,9 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @AllArgsConstructor
 @Data
-public class CreateUserRespDto {
+public class AddContentRespDto {
+	private int contentcode;
 	private int usercode;
-	private String username;
-	private String password;
-	private String name;
-	private String email;
+	private String content;
 	private boolean insertStatus;
 }
